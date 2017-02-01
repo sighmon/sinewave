@@ -4,6 +4,7 @@
     Demonstrates the use of Oscil to play a wavetable.
   
     Circuit: Audio output on digital pin 9 on a Uno or similar, or
+    Pin 11 on an Arduino Mega
     DAC/A14 on Teensy 3.1, or 
     check the README or http://sensorium.github.com/Mozzi/
   
@@ -27,8 +28,10 @@ Oscil <SIN2048_NUM_CELLS, AUDIO_RATE> bSin(SIN2048_DATA);
 
 void setup(){
   startMozzi(CONTROL_RATE); // set a control rate of 64 (powers of 2 please)
-  aSin.setFreq(800); // set the frequency
-  bSin.setFreq(810); // set the frequency
+  //aSin.setFreq(400); // set the frequency
+  //bSin.setFreq(405); // set the frequency
+  aSin.setFreq(300); // set the frequency
+  bSin.setFreq(303); // set the frequency
 }
 
 
